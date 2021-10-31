@@ -70,10 +70,6 @@ public class FileManipulation {
 		return score.length() == 0 ? false : true;
 	}
 
-	public void writePlayerData() {
-
-	}
-
 	public void writeQuestionsToFile() {
 		try {
 			FileOutputStream fos = new FileOutputStream(questionsList);
