@@ -108,10 +108,10 @@ public class Cases {
 			String optionD = QuestionsDatabase.updatedDatabase.get(i).getOptionD();
 
 			System.out.println(question);
-			System.out.print("A. " + optionA + "\t\t\t\t");
-			System.out.println("B. " + optionB);
-			System.out.print("C. " + optionC + "\t\t\t\t");
-			System.out.println("D. " + optionD);
+			System.out.printf("A. %-30s",optionA);
+			System.out.printf("B. %s %n",optionB);
+			System.out.printf("C. %-30s",optionC);
+			System.out.printf("D. %s %n",optionD);
 			checkCorrect(QuestionsDatabase.updatedDatabase.get(i).getCorrectOption(), i);
 
 		}
